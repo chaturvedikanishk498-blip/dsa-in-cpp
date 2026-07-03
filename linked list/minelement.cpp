@@ -38,7 +38,7 @@ int minelement(Node* head) {
 
 void print(Node* head) {
     while(head != NULL) {
-        cout<<head -> data<<endl;
+        cout<<head -> data<<" ";
         head = head -> next;
     }
     cout<<endl;
@@ -58,4 +58,6 @@ int main() {
     InsertAtTail(tail,99);
 
     print(head);
+
+    cout<<"minimum element in a list is  : "<<minelement(head)<<endl;
 }
